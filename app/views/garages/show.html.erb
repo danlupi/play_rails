@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @garage.location %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @garage.size %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @garage.color %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @garage.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_garage_path(@garage) %> |
+<%= link_to 'Back', garages_path %>
