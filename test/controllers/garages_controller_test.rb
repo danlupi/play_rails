@@ -29,6 +29,11 @@ class GaragesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get all garages" do
+    get :index
+    assert_response :success
+  end
+
   test "should get edit" do
     get :edit, id: @garage
     assert_response :success
